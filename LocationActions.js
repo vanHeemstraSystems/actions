@@ -2,7 +2,7 @@ var alt = require('../libraries/alt');
 
 class LocationActions {
   updateLocations(locations) {
-    return locations;
+    this.dispatch(locations);
   }
   fetchLocations() {
     return (dispatch) => {
@@ -19,10 +19,10 @@ class LocationActions {
       }
   }
   locationsFailed(errorMessage) {
-    return errorMessage;
+    this.dispatch(errorMessage);
   }
-  favoriteLocation(locationId) {
-    this.dispatch(locationId);
+  favoriteLocation(location) {
+    this.dispatch(location);
   }
 }
 
