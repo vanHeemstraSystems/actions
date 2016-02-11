@@ -21,6 +21,9 @@ class LocationActions {
   locationsFailed(errorMessage) {
     return errorMessage;
   }
+  favoriteLocation(locationId) {
+    this.dispatch(locationId);
+  }
 }
 
 module.exports = alt.createActions(LocationActions);
