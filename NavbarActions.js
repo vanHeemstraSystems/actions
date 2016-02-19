@@ -1,5 +1,5 @@
-import alt from '../alt'; /* TO DO: ADJUST PATH TO POINT TO alt.js */ 
-import {assign} from 'underscore';
+import alt from '../libraries/alt';
+import {assign} from '../libraries/underscore';
 
 class NavbarActions {
   constructor() {

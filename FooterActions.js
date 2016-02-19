@@ -1,4 +1,4 @@
-import alt from '../alt'; /* TO DO: ADJUST PATH TO POINT TO alt.js */
+import alt from '../libraries/alt';
 
 class FooterActions {
   constructor() {
